@@ -1,0 +1,259 @@
+header {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+header li {
+    padding-top: 5px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+main {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 30px;
+}
+
+#btn {
+    display: none;
+}
+
+li {
+    padding-right: 30px;
+    padding-left: 10px;
+    margin-top: 15px;
+    display: inline;
+}
+
+#nav ul{
+    padding-left: unset;
+}
+
+
+header li:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+li:hover > ul {
+    display: block!important;
+}
+
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #dddd;
+    margin-top: 17px;
+    padding-bottom: 10px;
+}
+
+#nav ul ul li {
+    margin-top: 10px;
+    display: block;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer li {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    display: list-item;
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/*INDEX*/
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 25px;
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*CATEGORIES*/
+.detall {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: 20px auto;
+    background-color: rgb(220, 220, 220);
+}
+
+.detall .img_detall {
+    float: left;
+    margin-right: 25px;
+}
+
+div.reset {
+    clear: both;
+}
+
+/*PRESENTACIO*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    /*grid-auto-rows: minmax(20px, 40px);*/
+}
+.wrapper p {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.center_title {
+    text-align: center;
+    width: "100%";
+}
+
+h3 {
+    text-align: center;
+    background-color: aqua;
+}
+
+/*LINKS*/
+.center_list {
+    text-align: center;
+    list-style: inside;
+}
+.multiline {
+    display: list-item;
+}
+
+/*PREMIS*/
+.premis_list {
+    padding-right: 40px;
+}
+
+.multiline_color {
+    display: list-item;
+    background-color: #dddd;
+}
+
+/*DISPOSITIUS MOVILS!!!!!!!!!!!!*/
+@media all and (max-width: 803px) {
+    header{
+        padding: unset;
+    }
+    main {
+        padding: unset;
+        padding: 10px;
+    }
+    #btn {
+        display: block;
+    }
+
+    .container #btn {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    .grid-container {
+        padding: unset;
+    }
+
+    header li a {
+        padding: 5px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    #nav {
+        margin-left: 10px;
+        top: 2%;
+        left: 15%;
+        position: absolute!important;
+        background-color: #dddd;
+        display: none;
+    }
+    #nav ul {
+        padding-left: unset;
+    }
+    #nav ul li {
+        padding: 0px ;
+    }
+    #nav ul ul {
+        padding-left: unset;
+        display: block;
+        opacity: 1;
+        margin-top: 15px;
+    }
+
+    #nav ul li ul li {
+        text-align: unset;
+    }
+
+    .submenu {
+        display: list-item;
+    }
+
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    border: 1px solid black;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: right;
+    border: 1px solid black;
+}
+
+.four {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    border: 1px solid black;
+    padding-left: 15 px;
+}
+
+.five {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: right;
+    border: 1px solid black;
+}
+
+.six {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: left;
+    border: 1px solid black;
+    padding-left: 15 px;
+}
